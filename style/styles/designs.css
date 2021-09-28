@@ -1,0 +1,12 @@
+.design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.design__item {
+  margin-right: 30px;
+}
+.design__item:last-child {
+  margin-right: 0;
+}

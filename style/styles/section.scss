@@ -1,0 +1,34 @@
+.section__container {
+    padding: rem(90px) 0 rem(90px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.section {
+    height: 100vh;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--font-color--white {
+        // height: 100vh;
+        color: #fff;
+
+        .section__title {
+            color: inherit;
+        }
+    }
+}
+
+.section__title {
+    font-size: rem(48px);
+    font-weight: bold;
+    margin-bottom: rem(60px);
+    text-align: center;
+    text-transform: uppercase;
+    color: #292929;
+}
+

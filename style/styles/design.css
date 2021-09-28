@@ -1,0 +1,15 @@
+.design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90px;
+}
+
+.design__icon {
+  width: 34px;
+  margin-right: 14px;
+}
+
+.design__text {
+  font-size: 16px;
+}

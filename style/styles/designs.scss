@@ -1,0 +1,11 @@
+.designs {
+    display: flex;
+}
+
+.designs__item {
+    margin-right: rem(30px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

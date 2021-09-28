@@ -1,0 +1,99 @@
+.container__order {
+    padding: rem(60px) 0 rem(60px);
+}
+
+.order--section {
+    background: url(../img/form/jeremy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    // &::before {
+    //     content: "";
+    //     filter: blur(4px);
+    //     position: absolute;
+    //     background: url(../../img/form/jeremy.jpg);
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    // }
+}
+
+.form {
+    display: flex;
+    padding: 0 5%;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 19%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+}
+
+.form__col {
+    flex: 1;
+    margin-right: rem(26px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(14px);
+}
+
+.form__block {
+    flex: 1;
+    margin-right: rem(14px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form_input {
+    width: 100%;
+    border: none;
+    padding: rem(18px) rem(12px);
+    border: rem(3px) solid transparent;
+    border-radius: rem(4px);
+
+    &--textarea {
+        height: rem(174px);
+        resize: none;
+    }
+
+    &:focus {
+        border-color: #FEDB3F;
+        outline: none;
+    }
+
+    @include tablets {
+        height: 48%;
+    }
+}
+
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.form__btns {
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
+}

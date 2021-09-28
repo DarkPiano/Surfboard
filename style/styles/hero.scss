@@ -1,0 +1,67 @@
+.hero {
+    background: url("../img/hero/arnaud.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: rem(650px);
+    color: #FFFFFF;
+
+    @include tablets {
+        background-position: center right 26%;
+    }
+
+    // @include phones {
+    //     background-size: cover;
+    // }
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) 0 rem(65px);
+
+    @include tablets {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.hero__title-section {
+    width: 45%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
+}
+
+.hero__main-title {
+    font-size: rem(48px);
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: rem(17px);
+    text-transform: uppercase;
+
+    @include phones {
+        font-size: rem(40px);
+    }
+}
+
+.hero__title-desc {
+    font-size: rem(21px);
+    margin-bottom: rem(39px);
+}
