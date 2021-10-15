@@ -1,0 +1,243 @@
+.products--section {
+    background: #F8FAF9;
+}
+
+.container__product {
+    padding: rem(62px) 0 rem(62px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.products__slider {
+    display: flex;
+    // position: relative;
+
+    .bx-wrapper{
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.slider__side {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    @include phones {
+        align-items: flex-start;
+        margin: 190px 0 0 0;
+    }
+}
+
+.side__img {
+    width: 13px;
+    height: 27px;
+    margin: 10px;
+}
+
+.product__container {
+    display: flex;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.product__col {
+    flex: 1;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.product__col-background {
+    background: url(../img/slider/slider_background.png) center no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 62px;
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.product__title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #292929;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.product__desc {
+    margin-bottom: 24px;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.product__option {
+    position: relative;
+    display: inline-block;
+}
+
+
+.product__option__desc {
+    display: flex;
+}
+
+.product__option__desc-board {
+    margin-right: 52px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.product__option__prise {
+    display: flex;
+    align-items: center;
+}
+
+.product__prise {
+    font-size: 60px;
+    color: #151515;
+    margin-right: 28px;
+
+    @include phones {
+        margin-right: 3px;
+    }
+}
+
+.product__option__desc-bold {
+    color: #000;
+    font-weight: bold;
+}
+
+.menu__dropdBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3A587E;
+    color: white;
+    width: 91px;
+    height: 91px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 52px;
+    text-decoration: none;
+
+    &:hover {
+        background: #3465A3;
+    }
+
+    &:focus {
+        background: #3465A3;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__dropd-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu__dropdownt {
+    position: relative;
+    display: inline-block;
+}
+
+.menu__dropdown_list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 273px;
+    z-index: 1;
+    border-radius: 4px;
+    padding: 18px 13px;
+    left: 90px;
+    top: 0px;
+}
+
+.menu__dropdown__item {
+    color: #000;
+    // display: flex;
+    align-items: center;
+    // display: block;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    // &:nth-child(1)::before{content: url(../../img/icon/length.png); margin-right: 16px;}
+    // &:nth-child(2)::before{content: url(../../img/icon/width.png); margin-right: 16px;}
+    // &:nth-child(3)::before{content: url(../../img/icon/thickness.png); margin-right: 16px;}
+    // &:nth-child(4)::before{content: url(../../img/icon/clock.png); margin-right: 16px;}
+
+
+}
+
+.menu__dropdown__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__dropdown-img {
+    // margin-right: 16px;
+}
+
+.menu__dropdown__desc {
+    // font-size: 16px;
+    // margin-right: 70px;
+}
+
+.show {
+    display: block;
+}
+
+/////////////////////////////////////////////////////////////////////////
+//////
+
+// .products {
+//     position: relative;
+//     min-height: 280px;
+// }
+
+// .products__item {
+//     position: absolute;
+//     opacity: 0;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     transition: .3s;
+// }
+
+// .products__item-active {
+//     position: static;
+//     opacity: 1;
+//     pointer-events: unset;
+// }
+
+

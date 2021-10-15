@@ -21,12 +21,22 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: 13px;
+    }
 }
 
 .menu__link {
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
+
+    @include tablets {
+        font-size: 36px;
+        font-weight: normal;
+    }
 }
 
 .phone-number {

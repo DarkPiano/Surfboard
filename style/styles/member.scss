@@ -1,0 +1,57 @@
+// .member {
+//     &__photo {
+//         width: 220px;
+//         height: 290px;
+//     }
+
+//     &__name {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         cursor: pointer;
+
+//         &--hum {
+//             font-weight: bold;
+//             font-size: 21px;
+//             color: #292929;
+//             margin-right: 4px;
+//         }
+
+//         &__triangle {
+//             transition: all .5s ease-in-out;
+//             &_rotated {
+//                 transform: rotate(180deg);
+//                 transition: all .5s ease-in-out;
+//             }
+//         }
+//     }
+
+//     &__desc {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         // opacity: 0;
+//         display: none;
+//         transition: all .5s ease-in-out;
+
+//         &-subtitle {
+//             color: #000;
+
+//             @include tablets {
+//                 font-weight: bold;
+//             }
+//         }
+
+//         &-text {
+//             text-align: center;
+//             max-width: 221px;
+//         }
+
+//         &__visible {
+//             display: flex;
+//             // opacity: 1;
+//             transition: all .5s ease-in-out;
+//         }
+//     }
+// }
+
