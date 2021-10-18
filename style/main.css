@@ -42,6 +42,15 @@ body {
   overflow: hidden;
 }
 
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
+}
+
 .container {
   width: 95%;
   max-width: 1100px;
@@ -95,7 +104,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #FFFFFF;
 }
@@ -354,7 +363,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,12 +769,6 @@ img {
   display: block;
 }
 
-.section__title {
-  font-weight: bold;
-  font-size: 48px;
-  color: #292929;
-}
-
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,6 +898,75 @@ img {
   }
 }
 
+.product--menu--section {
+  background: url(../../img/menu-product/teahupoo-surf.png) center center/cover no-repeat;
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #fff;
+}
+
+.product--menu--section__title {
+  margin-left: 84px;
+  margin-top: 109px;
+  color: #fff;
+}
+
+.product--menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product--menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product--menu__title {
+  position: relative;
+  width: 100px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product--menu__text {
+  font-weight: bold;
+  font-size: 48px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  padding: 22px 39px;
+  color: #444;
+}
+
+.product--menu__content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+
+.product--menu__conrainer {
+  padding: 40px 73px 45px 26px;
+}
+
 .reviews__container {
   padding: 3.4444444444rem 0 3.4444444444rem;
   display: -webkit-box;
@@ -979,6 +1051,95 @@ img {
   font-size: 1rem;
 }
 
+.player-section {
+  background: #F8FAF9;
+}
+
+.player__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.3333333333rem 2.3333333333rem;
+}
+
+.player-section__container {
+  width: 662px;
+  height: 392px;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.player-splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../img/video/unsplash.png) center center/cover no-repeat;
+  cursor: pointer;
+}
+
+.active .player__splash {
+  display: none;
+}
+
+.player-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  height: 35px;
+  background: #404040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+  width: 382px;
+}
+
+.paused .player__start {
+  width: 14px;
+  height: 22px;
+  border: none;
+}
+.paused .player__start::after, .paused .player__start::before {
+  content: "";
+  display: block;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background: #626262;
+}
+.paused .player__start::after {
+  right: 0;
+}
+.paused .player__start::before {
+  left: 0;
+}
+
+.player__start {
+  background: transparent;
+}
+
 .reviews__list {
   position: relative;
   min-height: 280px;
@@ -1055,12 +1216,12 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  top: 71.4%;
+  top: 77.8%;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 14.3%;
-  background: rgba(47, 47, 65, 0.5);
+  height: 11.1%;
+  background: rgba(43, 43, 43, 0.5);
 }
 
 .form {
@@ -1283,6 +1444,10 @@ img {
   z-index: 100;
 }
 
+.fixed-menu--shadowd {
+  color: #000;
+}
+
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
 }
@@ -1310,13 +1475,6 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.map-section {
-  background-image: url("../img/map/map.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .footer {

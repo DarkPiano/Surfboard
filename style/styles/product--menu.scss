@@ -1,0 +1,59 @@
+.product--menu--section {
+    background: url(../../img/menu-product/teahupoo-surf.png) center center/cover no-repeat;
+    position: relative;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.product--menu--section__title {
+    margin-left: 84px;
+    margin-top: 109px;
+    color: #fff;
+}
+
+.product--menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.product--menu__item {
+    display: flex;
+}
+
+.product--menu__title {
+    position: relative;
+    width: 100px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background: url(../../img/menu-product/ben-selway.png) center center/cover no-repeat;
+}
+
+.product--menu__img {
+    // min-height: 100%;
+    // background: rgba(47, 50, 52, .9);
+}
+
+.product--menu__text {
+    font-weight: bold;
+    font-size: 48px;
+    transform: rotate(270deg);
+    padding: 22px 39px;
+    color: #444;
+}
+
+.product--menu__content {
+    background: rgba(51, 53, 55, .9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+}
+
+.product--menu__conrainer {
+    padding: 40px 73px 45px 26px;
+}

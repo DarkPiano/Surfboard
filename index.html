@@ -15,7 +15,7 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="hero">
+            <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <a href="index.html" class="logo">
@@ -23,13 +23,13 @@
                         </a>
                         <nav class="menu">
                             <ul class="menu__list">
-                                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Серфборды</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Меню</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="whys" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="products" class="menu__link">Серфборды</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="productMenu" class="menu__link">Меню</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -47,7 +47,7 @@
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Профессиональные доски для серфинга</h1>
                         <div class="hero__title-desc">Самый большой выбор серфбордов в мире</div>
-                        <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                        <a href="#" data-scroll-to="order" class="btn btn--theme--yellow">Заказать</a>
                     </div>
                     <div class="hero__icons-section">
                         <ul class="designs">
@@ -74,7 +74,7 @@
                 </div>
             </section>
 
-            <section class="section whys--section">
+            <section data-sidemenu-theme="black" data-section-id="whys" class="section whys--section">
                 <div class="container section__container">
 
                     <div class="headline">
@@ -138,9 +138,200 @@
                 </div>
             </section>
 
-            <section class="section team--section">
+            <section data-sidemenu-theme="black" data-section-id="products" class="section products--section">
+                <div class="container container__product">
+                    <div class="products__slider">
+                        <a href="#!" class="slider__side slider__side--left">
+                            <img src="img/slider/slider_side-left.png" alt="left" class="side__img">
+                        </a>
+                        <ul class="products">
+                            <li class="products__item product products__item-active">
+                                <div class="product__container">
+                                    <div class="product__col product__col-flex">
+                                        <div class="product__col-background">
+                                            <img src="img/slider/slider_surfboard.png" alt="surfboard"
+                                                class="img__surfboard-board">
+                                        </div>
+                                    </div>
+                                    <div class="product__col">
+                                        <div class="product__option">
+                                            <a href="#!" class="menu__dropdBtn" id="myDropdBtn">
+                                                <img src="img/icon/cross.png" alt="cross" class="menu__dropd-img"
+                                                    onclick="myFunction()">
+                                                параметры
+                                            </a>
+                                            <div class="menu__dropdown">
+                                                <ul class="menu__dropdown_list" id="myDropdown">
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/length.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Длина доски</div>
+                                                            <div class="menu__dropdown__option">от 2.5 м.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/width.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Ширина доски</div>
+                                                            <div class="menu__dropdown__option">от 40 см.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/thickness.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Толщина</div>
+                                                            <div class="menu__dropdown__option">8 см.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/clock.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Срок службы</div>
+                                                            <div class="menu__dropdown__option">5 лет</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/weigth.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Вес</div>
+                                                            <div class="menu__dropdown__option">7-8 кг.</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product__title">Лонгбоард 2.0.</div>
+                                        <div class="product__desc">
+                                            Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
+                                            разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
+                                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
+                                            по ним.
+                                        </div>
+                                        <div class="product__option__desc">
+                                            <div class="product__option__desc-board">
+                                                Длина доски
+                                                <div class="product__option__desc-bold">
+                                                    от 2,5 метров
+                                                </div>
+                                            </div>
+                                            <div class="product__option__desc-board">
+                                                Ширина доски
+                                                <div class="product__option__desc-bold">
+                                                    от 40 сантиметров
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product__option__prise">
+                                            <div class="product__prise">7000 ₽</div>
+                                            <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="products__item product">
+                                <div class="product__container">
+                                    <div class="product__col product__col-flex">
+                                        <div class="product__col-background">
+                                            <img src="img/slider/slider_surfboard2.png" alt="surfboard"
+                                                class="img__surfboard-board">
+                                        </div>
+                                    </div>
+                                    <div class="product__col">
+                                        <div class="product__option">
+                                            <a href="#!" class="menu__dropdBtn" id="myDropdBtn" onclick="myFunction()">
+                                                <img src="img/icon/cross.png" alt="cross" class="menu__dropd-img">
+                                                параметры
+                                            </a>
+                                            <div class="menu__dropdown">
+                                                <ul class="menu__dropdown_list" id="myDropdown">
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/length.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Длина доски</div>
+                                                            <div class="menu__dropdown__option">от 2.5 м.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/width.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Ширина доски</div>
+                                                            <div class="menu__dropdown__option">от 40 см.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/thickness.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Толщина</div>
+                                                            <div class="menu__dropdown__option">8 см.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/clock.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Срок службы</div>
+                                                            <div class="menu__dropdown__option">5 лет</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__dropdown__item">
+                                                        <a href="" class="menu__dropdown__link">
+                                                            <img src="img/icon/weigth.png" alt="length"
+                                                                class="menu__dropdown-img">
+                                                            <div class="menu__dropdown__desc">Вес</div>
+                                                            <div class="menu__dropdown__option">7-8 кг.</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product__title">Шортборд</div>
+                                        <div class="product__desc">
+                                            Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро
+                                            набирать скорость, делать различные трюки на волне, включая резкие повороты
+                                            и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с
+                                            вращениями или без, а также катание
+                                            в трубах.
+                                        </div>
+                                        <div class="product__option__desc">
+                                            <div class="product__option__desc-board">
+                                                Длина доски
+                                                <div class="product__option__desc-bold">
+                                                    от 1,5 метров
+                                                </div>
+                                            </div>
+                                            <div class="product__option__desc-board">
+                                                Ширина доски
+                                                <div class="product__option__desc-bold">
+                                                    от 30 сантиметров
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product__option__prise">
+                                            <div class="product__prise">12000 ₽</div>
+                                            <a href="#" class="btn btn--theme--yellow">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#!" class="slider__side slider__side--right">
+                            <img src="img/slider/slider_side-right.png" alt="right" class="side__img">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section data-sidemenu-theme="black" data-section-id="team" class="section team--section">
                 <div class="container team__container">
-                    <h1 class="section__title">Команда</h1>
+                    <h1 class="section__title section__title-title">Команда</h1>
 
                     <ul class="team team__list--desktop">
                         <li class="team__item">
@@ -270,196 +461,58 @@
                 </div>
             </section>
 
-            <section class="section products--section">
-                <div class="container container__product">
-                    <div class="products__slider">
-                        <a href="#!" class="slider__side slider__side--left">
-                            <img src="img/slider/slider_side-left.png" alt="left" class="side__img">
+            <section data-sidemenu-theme="white" data-section-id="productMenu" class="section product--menu--section">
+                <h1 class="section__title product--menu--section__title">Меню</h1>
+                <ul class="product--menu">
+                    <li class="product--menu__item">
+                        <a href="#" class="product--menu__title">
+                            <img src="img/menu-product/ben-selway.png" alt="" class="product--menu__img">
+                            <div class="product--menu__text">Лонгборды</div>
                         </a>
-                        <ul class="products">
-                            <li class="products__item product products__item-active">
-                                <div class="product__container">
-                                    <div class="product__col product__col-flex">
-                                        <div class="product__col-background">
-                                            <img src="img/slider/slider_surfboard.png" alt="surfboard"
-                                                class="img__surfboard-board">
-                                        </div>
-                                    </div>
-                                    <div class="product__col">
-                                        <div class="product__option">
-                                            <a href="#!" class="menu__dropdBtn" id="myDropdBtn">
-                                                <img src="img/icon/cross.png" alt="cross" class="menu__dropd-img" onclick="myFunction()">
-                                                параметры
-                                            </a>
-                                            <div class="menu__dropdown">
-                                                <ul class="menu__dropdown_list" id="myDropdown">
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/length.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Длина доски</div>
-                                                            <div class="menu__dropdown__option">от 2.5 м.</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/width.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Ширина доски</div>
-                                                            <div class="menu__dropdown__option">от 40 см.</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/thickness.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Толщина</div>
-                                                            <div class="menu__dropdown__option">8 см.</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/clock.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Срок службы</div>
-                                                            <div class="menu__dropdown__option">5 лет</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/weigth.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Вес</div>
-                                                            <div class="menu__dropdown__option">7-8 кг.</div>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="product__title">Лонгбоард 2.0.</div>
-                                        <div class="product__desc">
-                                            Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
-                                            разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
-                                            по ним.
-                                        </div>
-                                        <div class="product__option__desc">
-                                            <div class="product__option__desc-board">
-                                                Длина доски
-                                                <div class="product__option__desc-bold">
-                                                    от 2,5 метров
-                                                </div>
-                                            </div>
-                                            <div class="product__option__desc-board">
-                                                Ширина доски
-                                                <div class="product__option__desc-bold">
-                                                    от 40 сантиметров
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product__option__prise">
-                                            <div class="product__prise">7000 ₽</div>
-                                            <a href="#" class="btn btn--theme--yellow">Заказать</a>
-                                        </div>
-                                    </div>
+                        <div class="product--menu__content">
+                            <div class="product--menu__conrainer">
+                                <div class="product--menu__content-text">
+                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
+                                    волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
+                                    волны и не спеша, не прилагая особых усилий ехать по ним.
                                 </div>
-                            </li>
-                            <li class="products__item product">
-                                <div class="product__container">
-                                    <div class="product__col product__col-flex">
-                                        <div class="product__col-background">
-                                            <img src="img/slider/slider_surfboard.png" alt="surfboard"
-                                                class="img__surfboard-board">
-                                        </div>
-                                    </div>
-                                    <div class="product__col">
-                                        <div class="product__option">
-                                            <a href="#!" class="menu__dropdBtn" id="myDropdBtn" onclick="myFunction()">
-                                                <img src="img/icon/cross.png" alt="cross" class="menu__dropd-img">
-                                                параметры
-                                            </a>
-                                            <div class="menu__dropdown">
-                                                <ul class="menu__dropdown_list" id="myDropdown">
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/length.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Длина доски</div>
-                                                            <div class="menu__dropdown__option">от 2.5 м.</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/width.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Ширина доски</div>
-                                                            <div class="menu__dropdown__option">от 40 см.</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/thickness.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Толщина</div>
-                                                            <div class="menu__dropdown__option">8 см.</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/clock.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Срок службы</div>
-                                                            <div class="menu__dropdown__option">5 лет</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu__dropdown__item">
-                                                        <a href="" class="menu__dropdown__link">
-                                                            <img src="img/icon/weigth.png" alt="length"
-                                                                class="menu__dropdown-img">
-                                                            <div class="menu__dropdown__desc">Вес</div>
-                                                            <div class="menu__dropdown__option">7-8 кг.</div>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="product__title">Лонгбоард 2.0.</div>
-                                        <div class="product__desc">
-                                            Устойчивая доска для новичков. На них легко лежать, сидеть, грести,
-                                            разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать
-                                            очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать
-                                            по ним.
-                                        </div>
-                                        <div class="product__option__desc">
-                                            <div class="product__option__desc-board">
-                                                Длина доски
-                                                <div class="product__option__desc-bold">
-                                                    от 2,5 метров
-                                                </div>
-                                            </div>
-                                            <div class="product__option__desc-board">
-                                                Ширина доски
-                                                <div class="product__option__desc-bold">
-                                                    от 40 сантиметров
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product__option__prise">
-                                            <div class="product__prise">7000 ₽</div>
-                                            <a href="#" class="btn btn--theme--yellow">Заказать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="#!" class="slider__side slider__side--right">
-                            <img src="img/slider/slider_side-right.png" alt="right" class="side__img">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product--menu__item">
+                        <a href="#" class="product--menu__title">
+                            <img src="img/menu-product/ben-selway2.png" alt="" class="product--menu__img">
+                            <div class="product--menu__text">Шортборды</div>
                         </a>
-                    </div>
-                </div>
+                        <div class="product--menu__content">
+                            <div class="product--menu__conrainer">
+                                <div class="product--menu__content-text">
+                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
+                                    волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
+                                    волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product--menu__item">
+                        <a href="#" class="product--menu__title">
+                            <img src="img/menu-product/ben-selway3.png" alt="" class="product--menu__img">
+                            <div class="product--menu__text">Софттопы</div>
+                        </a>
+                        <div class="product--menu__content">
+                            <div class="product--menu__conrainer">
+                                <div class="product--menu__content-text">
+                                    Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на
+                                    волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие
+                                    волны и не спеша, не прилагая особых усилий ехать по ним.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
-            <section class="section reviews--section">
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews--section">
                 <div class="container reviews__container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
@@ -549,7 +602,31 @@
                 </div>
             </section>
 
-            <section class="section order--section section--font-color--white">
+            <section data-sidemenu-theme="black" data-section-id="video" class="section player-section">
+                <div class="container player__container">
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="player-section__container">
+                        <div class="player active">
+                            <div class="player-wrapper">
+                                <div id="yt-player" class="player-elem"></div>
+                                <div class="player-splash"></div>
+                            </div>
+                            <div class="player-controls">
+                                <button class="player__start"><img src="./img/icon/play.png" alt="play" class="player__start-img"></button>
+                                <div class="player__playback">
+                                    <button class="player__playback-button"></button>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-completed">0:00</span>
+                                    <span class="player__duration-estimate">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-sidemenu-theme="white" data-section-id="order" class="section order--section section--font-color--white">
                 <div class="container container__order">
                     <h2 class="section__title order__title">Закажите доску</h2>
                     <form class="form">
@@ -635,13 +712,13 @@
                 </div>
             </div>
 
-            <section class="section map-section">
+            <section data-sidemenu-theme="black" data-section-id="map" class="section map--section">
                 <div class="container container__map">
                     <div id="map"></div>
                 </div>
             </section>
 
-            <footer class="footer">
+            <footer data-section-id="contacts" class="footer">
                 <div class="container footer__container">
                     <address class="contacts">
                         <div class="contacts__place">Москва, ул.Новый Арбат, д.31/12</div>
@@ -689,22 +766,27 @@
 
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item fixed-menu__item--active"> <a href="" data-scroll-to="hero" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="whys" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="products" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="team" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="productMenu" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="video" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="order" class="fixed-menu__link"></a> </li>
+            <li class="fixed-menu__item"> <a href="#" data-scroll-to="map" class="fixed-menu__link"></a> </li>
         </ul>
     </nav>
 
-    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="scripts/surfboard.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="mobile-detect.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
+    <script src="./scripts/surfboard.js"></script>
 
 </body>
 

@@ -7,14 +7,14 @@
 }
 
 .section {
-    height: 100vh;
+    // height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &--font-color--white {
-        // height: 100vh;
         color: #fff;
 
         .section__title {
