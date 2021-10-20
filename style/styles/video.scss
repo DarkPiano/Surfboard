@@ -28,7 +28,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../../img/video/unsplash.png) center center/cover no-repeat;
+    background: url(../img/video/unsplash.png) center center/cover no-repeat;
     cursor: pointer;
 }
 
@@ -47,7 +47,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
-    width: 382px;
+    // width: 382px;
+    width: 100%;
 }
 
 .paused {

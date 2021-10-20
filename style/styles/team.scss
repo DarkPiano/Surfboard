@@ -1,16 +1,9 @@
 .team__container {
-    // display: flex;
-    // flex-direction: column;
-    // // align-items: center;
-    // height: 100%;
-    // padding: 5rem 0 5rem;
+    padding: rem(42px) rem(42px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-// .section__title {
-//     font-weight: bold;
-//     font-size: 48px;
-//     color: #292929;
-// }
 
 .team {
     display: flex;
@@ -43,6 +36,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .team__member-img {

@@ -75,31 +75,54 @@ $('.slider__side--left').click(e => {
 /////////////////////
 //button
 
-const openButtonMennu = document.querySelector('#myDropdBtn');
-
-openButtonMennu.addEventListener("click", e => {
-
+$(".menu__dropdBtn").click (e=>{
+  $(".menu__dropdown_list").slideToggle(300);
 });
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+// $(document).ready(function(){
+//     $('a').on('click', function(e){
+//       e.preventDefault();
+//     });
+       
+//     $('#ddmenu li').hover(function () {
+//        clearTimeout($.data(this,'timer'));
+//        $('ul',this).stop(true,true).slideDown(200);
+//     }, function () {
+//       $.data(this,'timer', setTimeout($.proxy(function() {
+//         $('ul',this).stop(true,true).slideUp(200);
+//       }, this), 100));
+//     });
+   
+//   });
+  
 
-// const myDropdownButton=document.querySelector("#myDropdBtn")
 
-window.onclick = function (event) {
-  if (!event.target.matches('.menu__dropdBtn')) {
 
-    var dropdowns = document.getElementsByClassName("menu__dropdown_list");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+// const openButtonMennu = document.querySelector('#myDropdBtn');
+
+// openButtonMennu.addEventListener("click", e => {
+
+// });
+
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
+// // const myDropdownButton=document.querySelector("#myDropdBtn")
+
+// window.onclick = function (event) {
+//   if (!event.target.matches('.menu__dropdBtn')) {
+
+//     var dropdowns = document.getElementsByClassName("menu__dropdown_list");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 
 /////////////////////////////////////////////////////////////
 //section hero - menu overlay
@@ -462,6 +485,7 @@ if (isMobile) {
 
 ///////////////////////////////////////////////////
 //////player-section
+
 let player;
 const playerContainer = $(".player");
 
@@ -480,9 +504,9 @@ let eventInit = () => {
 }
 
 
-let player;
+// let player;
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('yt-player', {
+  let player = new YT.Player('yt-player', {
     height: '392',
     width: '662',
     videoId: 'W7h-Yho8EB0',

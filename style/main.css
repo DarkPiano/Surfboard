@@ -38,7 +38,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -769,6 +769,20 @@ img {
   display: block;
 }
 
+.team__container {
+  padding: 2.3333333333rem 2.3333333333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,6 +833,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
 }
 
 .team__member-img {
@@ -899,7 +918,7 @@ img {
 }
 
 .product--menu--section {
-  background: url(../../img/menu-product/teahupoo-surf.png) center center/cover no-repeat;
+  background: url(../img/menu-product/teahupoo-surf.png) center center/cover no-repeat;
   position: relative;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -945,13 +964,27 @@ img {
           justify-content: space-between;
 }
 
+.product--menu__title-first {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 50, 52, 0.5))), url(../img/menu-product/ben-selway.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(47, 50, 52, 0.5)), url(../img/menu-product/ben-selway.png) center center/cover no-repeat;
+}
+
+.product--menu__title-second {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 50, 52, 0.5))), url(../img/menu-product/ben-selway2.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(47, 50, 52, 0.5)), url(../img/menu-product/ben-selway2.png) center center/cover no-repeat;
+}
+
+.product--menu__title-third {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 50, 52, 0.5))), url(../img/menu-product/ben-selway3.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(47, 50, 52, 0.5)), url(../img/menu-product/ben-selway3.png) center center/cover no-repeat;
+}
+
 .product--menu__text {
   font-weight: bold;
   font-size: 48px;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   padding: 22px 39px;
-  color: #444;
 }
 
 .product--menu__content {
@@ -1088,7 +1121,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../../img/video/unsplash.png) center center/cover no-repeat;
+  background: url(../img/video/unsplash.png) center center/cover no-repeat;
   cursor: pointer;
 }
 
@@ -1113,7 +1146,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 25px;
-  width: 382px;
+  width: 100%;
 }
 
 .paused .player__start {
@@ -1207,21 +1240,8 @@ img {
 }
 
 .order--section {
-  background: url(../img/form/jeremy.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.order--section:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 77.8%;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 11.1%;
-  background: rgba(43, 43, 43, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0.5))), url(../img/form/jeremy.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(43, 43, 43, 0.5)), url(../img/form/jeremy.jpg) center center/cover no-repeat;
 }
 
 .form {
@@ -1478,7 +1498,7 @@ img {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
